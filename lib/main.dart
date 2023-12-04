@@ -79,7 +79,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Flexible(flex: 1,child: Row(
               // pre row
               children: [
-                Image.asset(context.read<PlayerCubit>().prevImage, fit: BoxFit.contain),
+                Text(context.read<PlayerCubit>().prevImage),
+                // Image.asset(context.read<PlayerCubit>().prevImage, fit: BoxFit.contain),
                 VerticalDivider(),
                 upIcon(),
                 //Container(),
@@ -91,7 +92,8 @@ class _MyHomePageState extends State<MyHomePage> {
               // current row
               children: [
                 //Container(),
-                Image.asset(context.read<PlayerCubit>().currentImage, fit: BoxFit.contain),
+                Text(context.read<PlayerCubit>().currentImage),
+                // Image.asset(context.read<PlayerCubit>().currentImage, fit: BoxFit.contain),
                 VerticalDivider(),
                 playArrow(),
               ],
@@ -103,7 +105,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 //crossAxisAlignment: CrossAxisAlignment.center,
                 // next row
                 children: [
-                  Image.asset(context.read<PlayerCubit>().nextImage, fit: BoxFit.contain),
+                  Text(context.read<PlayerCubit>().nextImage),
+                  // Image.asset(context.read<PlayerCubit>().nextImage, fit: BoxFit.contain),
                   VerticalDivider(),
                   downArrow(),
                 ],
