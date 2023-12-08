@@ -3,22 +3,9 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:zarbe_zoor/zarb_player_cubit.dart';
 
-import 'cubutplay.dart';
 
 Future<void> main() async {
-  // final cubit = CounterCubit();
-  // final subscription = cubit.stream.listen(print); // 1
-  // cubit.increment();
-  // cubit.increment();
-  // await Future.delayed(Duration.zero);
-  //
-  // await subscription.cancel();
-  // await cubit.close();
   runApp(MyApp());
-  // Bloc.observer = SimpleBlocObserver();
-  // CounterCubit()
-  //   ..increment()
-  //   ..close();
 }
 
 class MyApp extends StatelessWidget {
