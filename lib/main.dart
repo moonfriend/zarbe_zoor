@@ -18,18 +18,18 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: MyHomePage(),
+        home: zarbPlayerPage(),
       ),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class zarbPlayerPage extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _zarbPlayerPageState createState() => _zarbPlayerPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _zarbPlayerPageState extends State<zarbPlayerPage> {
   late AudioPlayer _audioPlayer;
   bool isPlaying = false; // Track play status
   int playingIndex = -1; // Track index of the playing audio
